@@ -1168,6 +1168,32 @@
 			}]
 		}]
 	},
+	"jwidget": {
+		"name": "jWidget",
+		"description": "jWidget is a purely object-oriented solution which doesn't rely on mystic custom HTML templates and unclear update cycles.",
+		"homepage": "http://enepomnyaschih.github.io/jwidget/index.html#!/guide/home",
+		"examples": [{
+			"name": "Architecture Example",
+			"url": "labs/architecture-examples/jwidget/release/",
+			"source_url": "labs/architecture-examples/jwidget/"
+		}],
+		"link_groups": [{
+			"heading": "Official Resources",
+			"links": [{
+				"name": "Documentation",
+				"url": "http://enepomnyaschih.github.io/jwidget/index.html#!/guide/home"
+			}, {
+				"name": "API Reference",
+				"url": "http://enepomnyaschih.github.io/jwidget/index.html#!/api"
+			}, {
+				"name": "Getting started",
+				"url": "http://enepomnyaschih.github.io/jwidget/index.html#!/guide/ensample1"
+			}, {
+				"name": "jWidget on GitHub",
+				"url": "https://github.com/enepomnyaschih/jwidget"
+			}]
+		}]
+	},
 	"kendo": {
 		"name": "Kendo UI",
 		"description": "Comprehensive HTML5/JavaScript framework for modern web and mobile app development.",

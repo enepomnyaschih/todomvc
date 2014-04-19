@@ -1,0 +1,24 @@
+{
+	"requires": [
+		"bower_components/jquery/dist/jquery.js|auto",
+		"bower_components/jwidget/jwlib.js|auto",
+		"bower_components/jwidget/jwui.js|auto",
+		"bower_components/todomvc-common/base.css"
+	],
+	
+	"resources": [
+		"todomvc/todomvc.js",
+		"todomvc/app/app.js",
+		"todomvc/app/app.jw.html : TodoMVC.App",
+		"todomvc/app/data.js",
+		"todomvc/filter.js",
+		"todomvc/footer/footer.js",
+		"todomvc/footer/footer.jw.html : TodoMVC.Footer",
+		"todomvc/footer/filter.js",
+		"todomvc/footer/filter.jw.html : TodoMVC.Footer.Filter",
+		"todomvc/todo/todo.js",
+		"todomvc/todo/view.js",
+		"todomvc/todo/view.jw.html : TodoMVC.Todo.View",
+		"todomvc/boot.js"
+	]
+}
