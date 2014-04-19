@@ -33,16 +33,17 @@ to the length of this array.
 
 Filterers are extremely fast in performance, that's why we don't fear to use 3 of them at once.
 
-Routing is implemented via binding to
-[JW.UI.hash](http://enepomnyaschih.github.io/jwidget/0.9.0/index.html#!/api/JW.UI-static-property-hash) property.
-On initialization, we create a registry of 3 filters and take a filter from this registry whenever hash value
-is changed. The same registry is used to render the options in the footer.
+Routing is implemented via binding to the observable property
+[JW.UI.hash](http://enepomnyaschih.github.io/jwidget/0.9.0/index.html#!/api/JW.UI-static-property-hash).
+On initialization, we create a [registry](http://enepomnyaschih.github.io/jwidget/0.9.0/index.html#!/api/Registry)
+of 3 filters and take a filter from this registry whenever hash value is changed.
+The same registry is used to render the options in the footer.
 
 
 ## Running
 
 [jWidget SDK](https://github.com/enepomnyaschih/jwsdk/wiki/en) command line tool is used to build the application.
-But "release" folder contains a built version of the application for you already.
+Folder "release" contains a built version of the application for you already.
 
 To build the application from source code, install [Bower](http://bower.io/) and
 [jWidget SDK](https://github.com/enepomnyaschih/jwsdk/wiki/en). Next, resolve the dependencies in "public" folder
@@ -57,7 +58,3 @@ After that, build the application from command line in a root folder:
 To build release version, run:
 
     jwsdk release jwsdk-config
-
-## Credit
-
-This TodoMVC application was created by [Egor Nepomnyaschih](https://github.com/enepomnyaschih).
