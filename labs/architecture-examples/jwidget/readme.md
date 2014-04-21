@@ -16,6 +16,10 @@ Here are some links you may find helpful:
 * [Getting started](http://enepomnyaschih.github.io/jwidget/index.html#!/guide/ensample1)
 * [jWidget on GitHub](https://github.com/enepomnyaschih/jwidget)
 
+Get help from other jWidget users:
+
+* [jWidget on Twitter](http://twitter.com/jwidgetproject)
+
 _If you have other helpful links to share, or find any of the links above no longer work, please [let us know](https://github.com/tastejs/todomvc/issues)._
 
 
