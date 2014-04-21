@@ -1171,7 +1171,7 @@
 	"jwidget": {
 		"name": "jWidget",
 		"description": "jWidget is a purely object-oriented solution which doesn't rely on mystic custom HTML templates and unclear update cycles.",
-		"homepage": "http://enepomnyaschih.github.io/jwidget/index.html#!/guide/home",
+		"homepage": "enepomnyaschih.github.io/jwidget/index.html#!/guide/home",
 		"examples": [{
 			"name": "Architecture Example",
 			"url": "labs/architecture-examples/jwidget/release/",
