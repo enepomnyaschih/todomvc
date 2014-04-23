@@ -4,6 +4,6 @@
   "dependencies": {
     "todomvc-common": "~0.1.8",
     "jquery": "~2.1.0",
-    "jwidget": "http://enepomnyaschih.github.io/jwidget/0.8/guides/endownload/jwidget.zip"
+    "jwidget": "0.10.0"
   }
 }
