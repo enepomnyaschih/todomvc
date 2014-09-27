@@ -3,12 +3,10 @@
 
 	TodoMVC.App = function (data) {
 		TodoMVC.App._super.call(this);
-		this.data = data;
+		this.data = data; // TodoMVC.App.Data
 	};
 
 	JW.extend(TodoMVC.App, JW.UI.Component, {
-		// TodoMVC.App.Data data;
-
 		renderInput: function (el) {
 			el.keydown(JW.inScope(this._onInputKeyDown, this));
 		},
@@ -18,12 +16,12 @@
 		},
 
 		renderToggleAll: function (el) {
-			var checked = this.own(new JW.Functor([this.data.activeTodos.length], function (activeCount) {
-				return activeCount === 0;
+			var checked = this.own(new JW.Functor([this.data.activeTodoCount], function (activeTodoCount) {
+				return activeTodoCount === 0;
 			}, this)).target;
 			this.own(new JW.UI.PropUpdater(el, 'checked', checked));
 
-			// We can't bind to 'change' event, because JW.UI.PropUpdater triggers it whenever it changes
+			// We can't bind to 'change' event, because JW.UI.PropUpdater above triggers it whenever it changes
 			// checkbox value via data binding. So, let's listen click.
 			el.click(JW.inScope(function () {
 				var checked = el.prop('checked');

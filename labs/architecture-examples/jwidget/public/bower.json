@@ -4,6 +4,6 @@
   "dependencies": {
     "todomvc-common": "~0.1.8",
     "jquery": "~2.1.0",
-    "jwidget": "0.10.0"
+    "jwidget": "1.1"
   }
 }

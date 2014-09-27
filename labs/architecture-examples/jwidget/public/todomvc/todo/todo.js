@@ -7,8 +7,5 @@
 		this.completed = this.own(new JW.Property(completed));
 	};
 
-	JW.extend(TodoMVC.Todo, JW.Class, {
-		// JW.Property<String> title;
-		// JW.Property<Boolean> completed;
-	});
+	JW.extend(TodoMVC.Todo, JW.Class);
 })();

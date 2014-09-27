@@ -3,14 +3,11 @@
 
 	TodoMVC.Footer.Filter = function (filter) {
 		TodoMVC.Footer.Filter._super.call(this);
-		this.filter = filter;
+		this.filter = filter; // TodoMVC.Filter
 		this.selected = this.own(new JW.Property(false));
 	};
 
 	JW.extend(TodoMVC.Footer.Filter, JW.UI.Component, {
-		// TodoMVC.Filter filter;
-		// JW.Property<Boolean> selected;
-
 		renderLink: function (el) {
 			el.text(this.filter.name);
 			el.attr('href', '#' + this.filter.hash);

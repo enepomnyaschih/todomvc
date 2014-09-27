@@ -3,16 +3,12 @@
 
 	TodoMVC.Filter = function (hash, name, func) {
 		TodoMVC.Filter._super.call(this);
-		this.hash = hash;
-		this.name = name;
-		this.func = func;
+		this.hash = hash; // String
+		this.name = name; // String
+		this.func = func; // Boolean func(TodoMVC.Todo todo);
 	};
 
-	JW.extend(TodoMVC.Filter, JW.Class, {
-		// String hash;
-		// String name;
-		// Boolean func(TodoMVC.Todo todo);
-	});
+	JW.extend(TodoMVC.Filter, JW.Class);
 
 	JW.makeRegistry(TodoMVC.Filter, 'hash');
 

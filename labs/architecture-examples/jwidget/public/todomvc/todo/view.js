@@ -8,14 +8,11 @@
 		// This is acceptable in terms of OOD principles, but if you don't like a dependency on global
 		// data object here, you can alternatively create a JW.Event removeEvent object here, trigger
 		// it on the destroy button click, catch it in TodoMVC.App class and remove a todo from the list.
-		this.data = data;
-		this.todo = todo;
+		this.data = data; // TodoMVC.App.Data
+		this.todo = todo; // TodoMVC.Todo
 	};
 
 	JW.extend(TodoMVC.Todo.View, JW.UI.Component, {
-		// TodoMVC.App.Data data;
-		// TodoMVC.Todo todo;
-
 		renderRoot: function (el) {
 			this.own(new JW.UI.ClassUpdater(el, 'completed', this.todo.completed));
 		},
