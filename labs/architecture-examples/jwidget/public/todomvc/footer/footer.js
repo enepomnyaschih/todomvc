@@ -23,7 +23,7 @@
 			filterViewMap = filterViews.index(JW.byField('filter.hash'));
 
 			// Bind a currently selected filter view to a currently selected filter model
-			selectedFilterView = this.own(JW.Functor([this.data.filter], function(filter) {
+			selectedFilterView = this.own(new JW.Functor([this.data.filter], function(filter) {
 				return filterViewMap[filter.hash];
 			}, this)).target;
 

@@ -2,7 +2,7 @@
 	'use strict';
 
 	TodoMVC.App.Data = function () {
-		var currentFilterer, activeFilterer, completedFilterer;
+		var currentFilterer, activeCounter, completedCounter;
 
 		TodoMVC.App.Data._super.call(this);
 
