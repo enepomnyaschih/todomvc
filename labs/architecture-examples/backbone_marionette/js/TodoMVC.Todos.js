@@ -23,6 +23,18 @@ TodoMVC.module('Todos', function (Todos, App, Backbone) {
 
 		isCompleted: function () {
 			return this.get('completed');
+		},
+
+		matchesFilter: function (filter) {
+			if (filter == 'all') {
+				return true;
+			}
+
+			if (filter == 'active') {
+				return !this.isCompleted();
+			}
+
+			return this.isCompleted();
 		}
 	});
 
@@ -41,9 +53,7 @@ TodoMVC.module('Todos', function (Todos, App, Backbone) {
 			return this.reject(this._isCompleted);
 		},
 
-		comparator: function (todo) {
-			return todo.get('created');
-		},
+		comparator: 'created',
 
 		_isCompleted: function (todo) {
 			return todo.isCompleted();
